@@ -26,23 +26,23 @@ function getresult(){
       if (computerChoice === userChoice) {
         result = 'its a draw!'
       }
-      if (computerChoice === 'rock' && userChoice === "paper") {
+      if (computerChoice === 'rock' && userChoice === 'paper') {
         result = 'you win!'
       }
-      if (computerChoice === 'rock' && userChoice === "scissors") {
+      if (computerChoice === 'rock' && userChoice === 'scissor') {
         result = 'you lost!'
       }
-      if (computerChoice === 'paper' && userChoice === "scissors") {
+      if (computerChoice === 'paper' && userChoice === 'scissor') {
         result = 'you win!'
       }
-      if (computerChoice === 'paper' && userChoice === "rock") {
+      if (computerChoice === 'paper' && userChoice === 'rock') {
         result = 'you lose!'
       }
-      if (computerChoice === 'scissors' && userChoice === "rock") {
+      if (computerChoice === 'scissor' && userChoice === 'rock') {
         result = 'you win!'
       }
-      if (computerChoice === 'scissors' && userChoice === "paper") {
+      if (computerChoice === 'scissor' && userChoice === 'paper') {
         result = 'you lose!'
       }
-      resultDisplay.innerHTML = result
+      document.getElementById('result').innerHTML = result
 }
